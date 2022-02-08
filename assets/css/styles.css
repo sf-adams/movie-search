@@ -354,7 +354,7 @@ img {
 .button--ghost {
   background-color: transparent;
   border: 2px solid var(--first-color);
-
+  color: var(--first-color);
 }
 
 /*=============== ABOUT ===============*/
