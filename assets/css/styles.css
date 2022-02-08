@@ -326,7 +326,7 @@ img {
   justify-items: center;
 }
 
-.home__scroll {
+.home__scroll-icon {
   font-size: 1.25rem;
 }
 
@@ -336,7 +336,26 @@ img {
 }
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
 
+.button:hover {
+  background-color: var(--body-color);
+  color: var(--body-color);
+}
+
+.button--ghost {
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+
+}
 
 /*=============== ABOUT ===============*/
 
