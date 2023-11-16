@@ -67,14 +67,11 @@ small {
   background-color: hsla(0, 0%, 0%, 0.85);
 }
 
-/* Movies */
-.movie {
-  width: 200px;
+.movies {
+  margin-top: 3rem;
   display: flex;
-}
-
-.movie__image {
-  max-width: 100%;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 @media (min-width: 768px) {

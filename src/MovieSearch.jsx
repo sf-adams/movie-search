@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Movie from "./Movie";
 
 export default function MovieSearch() {
   const [query, setQuery] = useState("");
@@ -41,12 +42,11 @@ export default function MovieSearch() {
         <button className="search__button">Search</button>
       </form>
       <div className="movies">
-        {movies.map((movie) => (
-          <div key={movie.id} className="movie">
-            <img className="movie__image" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
-            {movie.title} - {movie.release_date}
-          </div>
-        ))}
+        {movies
+          .filter((movie) => movie.poster_path)
+          .map((movie) => (
+            <Movie key={movie.id} movie={movie}/>
+          ))}
       </div>
     </>
   );
